@@ -3,4 +3,5 @@ include 'log'
 include 'template'
 include 'json'
 include 'test'
+include 'db'
 
