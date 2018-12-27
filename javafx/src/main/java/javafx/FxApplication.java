@@ -36,7 +36,8 @@ public class FxApplication extends Application {
 
                     }
                 });
-        webEngine.load("http://www.w3cschool.cn");
+        //webEngine.load("http://www.w3cschool.cn");
+        webEngine.load("http://172.28.1.2:8087/rxtool/login");
         scene.setRoot(browser);
         stage.setScene(scene);
         stage.show();
