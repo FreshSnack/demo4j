@@ -5,4 +5,5 @@ include 'json'
 include 'test'
 include 'db'
 include 'javafx'
+include 'swt'
 
