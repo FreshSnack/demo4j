@@ -72,7 +72,6 @@ public class PoiUtil {
         return imgList;
     }
 
-
     public static void main(String[] args) throws Exception {
         File htmlFile = new File(PoiUtil.class.getResource("/test.html").getPath());
         String htmlStr = FileUtils.readFileToString(htmlFile);
