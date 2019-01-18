@@ -24,7 +24,7 @@ public class HtmlToWord2 {
     public static void main(String[] args) throws Exception {
 
         File htmlFile = new File(HtmlToWord.class.getResource("/test.html").getPath());
-        String outputPath = "F:\\idea\\workspace\\demo4j\\amar\\output";
+        String outputPath = "F:\\idea\\workspace\\demo4j\\amar\\out";
 
         String content = FileUtils.readFileToString(htmlFile);
         Map<String, Object> param = new HashMap<String, Object>();
@@ -68,7 +68,8 @@ public class HtmlToWord2 {
             poifs.writeFilesystem(ostream);
             bais.close();
             ostream.close();
-
+            // rtet
+            JacobUtils.wordConveter(outputPath + "\\temp.doc");
             // 临时文件（手动改好的docx文件）
             CustomXWPFDocument doc = OfficeUtil.generateWord(param, outputPath + "\\temp.docx");
             //最终生成的带图片的word文件

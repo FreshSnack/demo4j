@@ -87,7 +87,7 @@ public class OfficeUtil {
                                     text = text.replace(key, value.toString());
                                 } else if (value instanceof Map) {//图片替换
                                     text = text.replace(key, "");
-                                    Map pic = (Map)value;
+                                    /*Map pic = (Map)value;
                                     int width = Integer.parseInt(pic.get("width").toString());
                                     int height = Integer.parseInt(pic.get("height").toString());
                                     int picType = getPictureType(pic.get("type").toString());
@@ -98,7 +98,7 @@ public class OfficeUtil {
                                         doc.createPicture(blipId,doc.getNextPicNameNumber(picType), width, height,paragraph);
                                     } catch (Exception e) {
                                         e.printStackTrace();
-                                    }
+                                    }*/
                                 }
                             }
                         }

@@ -16,7 +16,7 @@ public class HtmlToWord {
         File htmlFile = new File(HtmlToWord.class.getResource("/test.html").getPath());
         FileInputStream fileInputStream = new FileInputStream(htmlFile);
 
-        String outputPath = "F:\\idea\\workspace\\demo4j\\amar\\output";
+        String outputPath = "F:\\idea\\workspace\\demo4j\\amar\\out";
 
         File wordFile = new File(outputPath + "\\html.doc");
 
